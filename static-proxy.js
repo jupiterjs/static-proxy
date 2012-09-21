@@ -107,7 +107,7 @@ var checkAndDo = function(value, obj, doThis, request, response){
 	    
 	    console.log('->', request.method, request.url);
 	    var basePath = path.dirname( path.join( __dirname, current ) );
-	    var filePath = path.join( basePath, parsedUrl.pathname );
+	    var filePath = path.join( basePath, config.root, parsedUrl.pathname );
 	    
 	    
 	    if (filePath == './') {
